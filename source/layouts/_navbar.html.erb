@@ -1,0 +1,13 @@
+<header class="navbar-wagon">
+  <% data.users.each do |user| %>
+    <!-- logo -->
+    <div class="navbar-wagon-brand">
+      <p><%= user.name %> - <%= user.work %></p>
+      <p class="hidden-md hidden-lg">Appelez moi au <%= user.phone %></p>
+    </div>
+
+    <div class="navbar-wagon-right hidden-xs hidden-sm">
+       <p>Appelez moi au <%= user.phone %></p>
+    </div>
+  <% end %>
+</header>
