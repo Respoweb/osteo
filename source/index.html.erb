@@ -1,35 +1,66 @@
 ---
-title: <%= data.users.work %> - <%= data.users.work %>
+title: John Doe - Ostéopathe à Nantes
 ---
 
 <div class="wrapper">
   <div class="row">
-    <div class="col-xs-12 col-md-6">
-      <div id="home">
-        <div class="home-content">
-          <%= image_tag "logo.png", width: "200" %>
-          <p>
-            Middleman is now running!
-          </p>
-          <p class="about">
-            <%= link_to "More about this template", "about.html" %>
-          </p>
+    <div class="col-xs-12">
+      <div class="banner" style="background-image: linear-gradient(-225deg, rgba(194, 229, 156, 0.5) 0%, rgba(100, 179, 244, 0.5) 50%), url(<%= image_path 'cabinet-osteopathe.jpg'%>); height: calc(100vh - 70px);">
+        <div class="banner-content">
+          <div class="banner-title">
+            <h1>Cabinet d'Ostéopathie à Nantes</h1>
+          </div>
+          <div class="banner-opening">
+            <p><strong>Du Lundi au Samedi</strong></p>
+            <p><strong>9h à 19h</strong></p>
+          </div>
+          <% data.users.each do |user| %>
+            <p><%= user.address %>, <%= user.postalcode %>, <%= user.city %></p>
+          <% end %>
         </div>
       </div>
     </div>
-    <div class="col-xs-12 col-md-6">
-      <div id="home">
-        <div class="home-content">
-          <%= image_tag "logo.png", width: "200" %>
-          <p>
-            Middleman is now running!
-          </p>
-          <p class="about">
-            <%= link_to "More about this template", "about.html" %>
-          </p>
+  </div>
+</div>
+<div class="container features">
+  <div class="row">
+    <div class="col-xs-12 col-sm-4">
+      <div class="card">
+        <div class="feature" style="background-image: url(<%= image_path 'osteopathie-bebe.jpg'%>);">
+          <div class="card-content">
+            <h2>Nourrissons</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores architecto aut eveniet molestias recusandae veritatis error dicta adipisci dolorum, quod, aperiam magni eaque reprehenderit non quis, labore. Deserunt, tempore, ipsa!</p>
+          </div>
         </div>
       </div>
     </div>
+    <div class="col-xs-12 col-sm-4">
+        <div class="card">
+        <div class="feature" style="background-image: url(<%= image_path 'osteopathie-femme-enceinte.jpg'%>);">
+          <div class="card-content">
+            <h2>Femmes Enceintes</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores architecto aut eveniet molestias recusandae veritatis error dicta adipisci dolorum, quod, aperiam magni eaque reprehenderit non quis, labore. Deserunt, tempore, ipsa!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <div class="card">
+        <div class="feature" style="background-image: url(<%= image_path 'osteopathie-sport.jpg'%>);">
+          <div class="card-content">
+            <h2>Sportifs</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores architecto aut eveniet molestias recusandae veritatis error dicta adipisci dolorum, quod, aperiam magni eaque reprehenderit non quis, labore. Deserunt, tempore, ipsa!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrapper">
+    <div class="row">
+      <div class="col-xs-12">
+        <div id="map"></div>
+      </div>
   </div>
 </div>
 

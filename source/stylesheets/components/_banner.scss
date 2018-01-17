@@ -1,0 +1,29 @@
+.banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  width: 100%;
+}
+
+.banner-content {
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 3px;
+  p {
+    font-size: 30px;
+  }
+}
+
+.banner-title {
+  padding-bottom: 30px;
+}
+
+.banner-opening {
+  padding-bottom: 30px;
+}

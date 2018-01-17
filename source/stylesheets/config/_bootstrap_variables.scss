@@ -6,11 +6,11 @@
 // General style
 $font-family-sans-serif:  $body-font;
 $headings-font-family:    $headers-font;
-$body-bg:                 $light-gray;
+$body-bg:                 $light-grey;
 $font-size-base: 18px;
 
 // Colors
-$gray-base:       $gray;
+$gray-base:       $grey;
 $brand-primary:   $blue;
 $brand-success:   $green;
 $brand-info:      $yellow;
@@ -23,3 +23,16 @@ $border-radius-large: 2px;
 $border-radius-small: 2px;
 
 // Override other variables below!
+
+body {
+    margin: 0;
+
+  a {
+  color: #fff;
+  text-decoration: none;
+  }
+  a:hover {
+  color: #fff;
+  text-decoration: none;
+  }
+}

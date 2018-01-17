@@ -2,12 +2,16 @@
   <% data.users.each do |user| %>
     <!-- logo -->
     <div class="navbar-wagon-brand">
-      <p><%= user.name %> - <%= user.work %></p>
-      <p class="hidden-md hidden-lg">Appelez moi au <%= user.phone %></p>
+      <% link_to '/index.html' do  %>
+        <p class="name"><%= user.name.upcase %> - <%= user.work.capitalize %></p>
+        <div class="hidden-sm hidden-md hidden-lg">
+          <p class="btn btn-primary"> <i class="fa fa-phone" aria-hidden="true"></i> <%= user.phone %></p>
+        </div>
+      <% end %>
     </div>
 
     <div class="navbar-wagon-right hidden-xs hidden-sm">
-       <p>Appelez moi au <%= user.phone %></p>
+       <p class="btn btn-primary">Appelez moi au <%= user.phone %></p>
     </div>
   <% end %>
 </header>
