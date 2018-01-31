@@ -15,19 +15,6 @@
      <%= partial "layouts/navbar" %>
     <%= yield %>
     <%= partial "layouts/footer" %>
-    <script>
-      function initMap() {
-        var respoweb = {lat: 47.220161, lng: -1.5615083999999797};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 10,
-          center: respoweb
-        });
-        var marker = new google.maps.Marker({
-          position: respoweb,
-          map: map
-        });
-      }
-    </script>
    <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfeIVJZ4XrND_mK3sFLVrqfvopmVANcms&callback=initMap">
     </script>

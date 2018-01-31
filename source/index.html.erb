@@ -1,5 +1,5 @@
 ---
-title: John Doe - Ostéopathe à Nantes
+title: Cabinet d'Ostéopathie à Rezé
 ---
 
 <div class="wrapper">
@@ -8,14 +8,15 @@ title: John Doe - Ostéopathe à Nantes
       <div class="banner" style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 50%), url(<%= image_path 'cabinet-osteopathe.jpg'%>); min-height: calc(100vh - 70px);">
         <div class="banner-content">
           <div class="banner-title">
-            <h1>Cabinet d'Ostéopathie à Nantes</h1>
+            <h1>Cabinet d'Ostéopathie à Rezé</h1>
           </div>
           <div class="banner-opening">
-            <p><strong>Du Lundi au Samedi</strong></p>
-            <p><strong>9h à 19h</strong></p>
+            <p><strong>Journée continue du lundi au vendredi sur RDV</strong></p>
+            <p><strong>8h à 20h</strong></p>
+            <p><strong>Samedi matin de 9h à 12h</strong></p>
           </div>
-          <% data.users.each do |user| %>
-            <p><%= user.address %>, <%= user.postalcode %>, <%= user.city %></p>
+          <% data.offices.each do |office| %>
+            <p><%= office.address %>, <%= office.postalcode %>, <%= office.city %></p>
           <% end %>
         </div>
       </div>
@@ -26,50 +27,50 @@ title: John Doe - Ostéopathe à Nantes
   <div class="row">
     <div class="col-xs-12 col-sm-6 mindspirit brown-background">
       <div class="spirit-content">
-      <h2>Notre philosophie</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi omnis, aliquam, nesciunt soluta praesentium dolor a! At, accusamus, neque. Dolorem, aspernatur perspiciatis tempore nihil molestiae eum deserunt aliquid? Veritatis, corporis.</p>
+      <h2>L'Ostéopathie c'est quoi ?</h2>
+      <p>L'ostéopathie consiste, dans une compréhension globale du patient, à prévenir, diagnostiquer et traiter manuellement les dysfonctions de la mobilité des tissus du corps humain susceptibles d'en altérer l'état de santé.</p>
       </div>
     </div>
   </div>
 </div>
 <div class="container hidden-xs features">
   <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="card">
-        <div class="feature" style="background-image: url(<%= image_path 'osteopathie-bebe.jpg'%>);">
-          <div class="card-content">
-            <h2>Nourrissons</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores architecto aut eveniet molestias recusandae veritatis error dicta adipisci dolorum, quod, aperiam magni eaque reprehenderit non quis, labore. Deserunt, tempore, ipsa!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-4">
+    <% data.users.each do |user| %>
+      <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="card">
-        <div class="feature" style="background-image: url(<%= image_path 'osteopathie-femme-enceinte.jpg'%>);">
           <div class="card-content">
-            <h2>Femmes Enceintes</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores architecto aut eveniet molestias recusandae veritatis error dicta adipisci dolorum, quod, aperiam magni eaque reprehenderit non quis, labore. Deserunt, tempore, ipsa!</p>
+            <%= image_tag 'salle-attente-cabinet-osteo.jpg', class: 'img-circle profile'%>
+            <h2><%= user.fname %> <%= user.lname %></h2>
+            <p>Docteur Ostéopahte Diplmoé de l'école IDHEO de Nantes. Formée à Ostéooox : réhabilitation sensori-otrice appliqué à la sphère oro-faciale. Formée à la prise en charge des Nourissons (Formation Eric Simon et Dany Heintz), Femmes enceintes et Sportifs.</p>
+          </div>
+          <div class="card-footer">
+            <p>Honoraires <strong><%= user.fees %> €</strong></p>
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="card">
-        <div class="feature" style="background-image: url(<%= image_path 'osteopathie-sport.jpg'%>);">
-          <div class="card-content">
-            <h2>Sportifs</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores architecto aut eveniet molestias recusandae veritatis error dicta adipisci dolorum, quod, aperiam magni eaque reprehenderit non quis, labore. Deserunt, tempore, ipsa!</p>
-          </div>
-        </div>
-      </div>
+    <% end %>
     </div>
   </div>
 </div>
 <div class="wrapper">
     <div class="row">
       <div class="col-xs-12">
-        <div id="map"></div>
+        <div class="map-container">
+          <div id="map"></div>
+          <div class="map-infos-container">
+            <h3>Adresse</h3>
+            <% data.offices.each do |office| %>
+                <p><%= office.address %>, <%= office.postalcode %>, <%= office.city %></p>
+            <% end %>
+            <h3>Accessibilité</h3>
+            <p><i class="fa fa-wheelchair" aria-hidden="true"></i> Accessibilité aux personnes à mobilité réduite</p>
+            <p><i class="fa fa-subway" aria-hidden="true"></i> Ligne 3 arrêt balinière</p>
+            <p><i class="fa fa-bus" aria-hidden="true"></i> Ligne 98 arrêt balinière</p>
+            <p><i class="fa fa-bus" aria-hidden="true"></i> Ligne 97 arrêt 8 mai</p>
+            <p><i class="fa fa-car" aria-hidden="true"></i> Parking du 8 mai à 5 minutes</p>
+
+          </div>
+        </div>
       </div>
   </div>
 </div>
