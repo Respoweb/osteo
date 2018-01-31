@@ -1,14 +1,17 @@
 - fname: 'Julie'
   lname: 'Marsault'
+  image: 'profile.png'
   specialty: 'Ostéopahte'
   fees: '58'
 
 - fname: 'Bertrand'
   lname: 'Thery'
+  image: 'profile.png'
   specialty: 'Ostéopahte'
   fees: '63'
 
 - fname: 'Pascal'
   lname: 'Bouvattier'
+  image: 'profile.png'
   specialty: 'Ostéopahte'
   fees: '58'

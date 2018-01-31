@@ -1,18 +1,12 @@
-.card {
-  margin: 0px;
-}
-
-.card-content {
-  background-color: rgba(250, 250, 250, 0.6 );
-  text-align: center;
-  padding: 10px 20px;
-  margin: 50px;
-  width: 400px;
-  min-height: 300px;
-
+.card-container {
+  margin: 30px 10px;
+  box-shadow: 1px 2px 1px rgba(230, 230, 230, 1);
+  border-radius: 3px;
   p {
     margin-top: 20px;
-    font-size: 14px
+    font-size: 14px;
+    text-align: justify;
+    line-height: 25px;
   }
 
   h2 {
@@ -22,6 +16,38 @@
   }
 }
 
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+
+.card-content {
+  background-color: rgba(255, 255, 255, 1);
+  text-align: center;
+  padding: 10px 20px;
+  width: 400px;
+  min-height: 300px;
+
+
+}
+
 .card-footer {
+  padding: 0px 20px;
+  border-radius: 0 0 3px 3px;
+  background-color: rgba(162, 137, 111, 1);
+  p {
+    margin: 0;
+    color: $white;
+    text-align: center;
+  }
 
 }
