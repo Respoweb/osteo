@@ -5,13 +5,13 @@
       <% link_to '/index.html' do  %>
         <p class="name"><%= office.work.capitalize %></p>
         <div class="hidden-sm hidden-md hidden-lg">
-          <p class="btn btn-primary"> <i class="fa fa-phone" aria-hidden="true"></i> <%= office.phone %></p>
+          <a href="tel:+33240842124"><p class="btn btn-primary"><i class="fa fa-phone" aria-hidden="true"></i> <%= office.phone %></p></a>
         </div>
       <% end %>
     </div>
 
     <div class="navbar-wagon-right hidden-xs">
-       <p class="btn btn-primary">Appelez nous au <%= office.phone %></p>
+      <a href="tel:+33240842124"><p class="btn btn-primary">Appelez nous au <%= office.phone %></p></a>
     </div>
   <% end %>
 </header>
