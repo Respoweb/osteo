@@ -38,3 +38,10 @@
 .name {
   margin-top: 15px;
 }
+
+@media(max-width:767px){
+  .navbar-wagon {
+    height: 130px;
+  }
+
+}

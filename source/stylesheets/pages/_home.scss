@@ -1,3 +1,17 @@
+@media(max-width:767px){
+
+}
+@media(min-width:768px){
+
+}
+@media(min-width:992px){
+
+}
+@media(min-width:1200px){
+
+}
+
+
 
 .features {
   display: flex;
@@ -11,6 +25,7 @@
   padding: 25px 20px;
   margin-top: 50px;
   margin-bottom: 50px;
+
  }
 
 
@@ -58,5 +73,28 @@
     color: $blue;
   }
 }
+
+
+@media(max-width:767px){
+  .map-infos-container {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  top: 22px;
+  left: 14px;
+  }
+
+
+ .mindspirit {
+  max-width: 96%;
+
+ }
+
+}
+
+
+// @media(min-width:768px){}
+// @media(min-width:992px){}
+// @media(min-width:1200px){}
 
 
