@@ -7,6 +7,15 @@
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title %></title>
     <meta name="description" content="Vos ostéos préférés vous soigne aux petits oignons">
+    <!-- FACEBOOK -->
+    <meta property="og:image" content="http://example.com/ogp.jpg" />
+    <meta property="og:image:secure_url" content="https://secure.example.com/ogp.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:image:alt" content="A shiny red apple with a bite taken out" />
+     <!-- twitter -->
+
     <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag "application" %>
     <%= favicon_tag 'images/favicon.png' %>
