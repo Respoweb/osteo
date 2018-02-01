@@ -25,9 +25,13 @@ $border-radius-small: 2px;
 // Override other variables below!
 
 body {
-    margin: 0;
+  .row {
+    margin: auto;
+  }
+
+  .col-xs-12 {
     padding: 0;
-    max-width: 99%;
+  }
 
   a {
   color: #fff;
@@ -38,6 +42,9 @@ body {
   text-decoration: none;
   }
 }
+
+
+
 
 
 

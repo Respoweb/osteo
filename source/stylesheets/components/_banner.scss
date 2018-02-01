@@ -27,3 +27,29 @@
 .banner-opening {
   padding-bottom: 30px;
 }
+
+
+@media(max-width:767px){
+
+.banner-content {
+  padding: 10px 20px;
+  border-radius: 3px;
+  p {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 36px;
+  }
+}
+
+.banner-title {
+  padding-bottom: 30px;
+}
+
+.banner-opening {
+  padding-bottom: 30px;
+}
+
+
+
+}

@@ -43,7 +43,7 @@ title: Ostéopathe Rezé - Cabinet de Julie Marsault, Bertrand Thery et Pascal B
             <div class="card-content">
               <%= image_tag user.image, class: 'img-circle card-img'%>
               <h2><%= user.fname %> <%= user.lname %></h2>
-              <p>Docteur Ostéopahte Diplomé de l'école IDHEO de Nantes. Formée à Ostéooox : réhabilitation sensori-otrice appliqué à la sphère oro-faciale. Formée à la prise en charge des Nourissons (Formation Eric Simon et Dany Heintz), Femmes enceintes et Sportifs.</p>
+              <p><%= user.description %></p>
             </div>
           </div>
           <div class="card-footer">
@@ -56,10 +56,32 @@ title: Ostéopathe Rezé - Cabinet de Julie Marsault, Bertrand Thery et Pascal B
 </div>
 <div class="wrapper">
   <div class="row">
+    <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+      <div class="infos-mobile">
+        <h3>Règlement</h3>
+        <p><i class="fa fa-money" aria-hidden="true"></i> Règlement par <strong>chèque</strong> ou <strong>espèces</strong>.</p>
+
+        <h3>Adresse</h3>
+        <% data.offices.each do |office| %>
+            <p><i class="fa fa-home" aria-hidden="true"></i> <%= office.address %>, <%= office.postalcode %>, <%= office.city %>.</p>
+        <% end %>
+
+        <h3>Accessibilité</h3>
+        <p><i class="fa fa-wheelchair" aria-hidden="true"></i> Accessibilité aux personnes à mobilité réduite</p>
+        <p><i class="fa fa-bus" aria-hidden="true"></i> Ligne 3 arrêt balinière.</p>
+        <p><i class="fa fa-bus" aria-hidden="true"></i> Ligne 98 arrêt balinière.</p>
+        <p><i class="fa fa-bus" aria-hidden="true"></i> Ligne 97 arrêt 8 mai.</p>
+        <p><i class="fa fa-car" aria-hidden="true"></i> Parking du 8 mai à 5 minutes.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrapper">
+  <div class="row">
     <div class="col-xs-12">
       <div class="map-container">
         <div id="map"></div>
-        <div class="map-infos-container">
+        <div class="map-infos-container hidden-xs">
           <h3>Règlement</h3>
           <p><i class="fa fa-money" aria-hidden="true"></i> Règlement par <strong>chèque</strong> ou <strong>espèces</strong>.</p>
 
@@ -79,5 +101,6 @@ title: Ostéopathe Rezé - Cabinet de Julie Marsault, Bertrand Thery et Pascal B
     </div>
   </div>
 </div>
+
 
 

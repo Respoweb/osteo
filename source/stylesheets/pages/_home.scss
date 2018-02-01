@@ -12,7 +12,6 @@
 }
 
 
-
 .features {
   display: flex;
   align-items: center;
@@ -49,7 +48,6 @@
 #map {
   height: 450px;
   width: 100%;
-  position: absolute;
  }
 
 .map-infos-container {
@@ -76,20 +74,39 @@
 
 
 @media(max-width:767px){
-  .map-infos-container {
-  position: absolute;
+
+  .infos-mobile {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 20px;
-  top: 22px;
-  left: 14px;
+
+  h3 {
+    font-size: 16px;
+    font-weight: bold;
   }
 
+  p {
+    font-size: 14px;
+    font-weight: lighter;
+  }
 
- .mindspirit {
-  max-width: 96%;
+  .fa {
+    font-size: 18px;
+    color: $blue;
+    }
+  }
 
- }
+  .spirit-content {
+    h2 {
+      font-size: 24px;
+    }
 
+    p {
+      padding: 20px;
+      text-align: justify;
+      font-size: 14px;
+
+    }
+}
 }
 
 
