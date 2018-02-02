@@ -12,4 +12,6 @@ gem 'font-awesome-middleman'
 gem 'bootstrap-sass'
 gem 'jquery-middleman'
 gem 'middleman-minify-html'
+gem 'therubyracer' # faster JS compiles
+gem 'oj' # faster JSON parser and object serializer
 
