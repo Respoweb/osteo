@@ -4,3 +4,7 @@
 .sass-cache
 build/
 
+# Ignore application configuration
+/data/application.yml
+
+
