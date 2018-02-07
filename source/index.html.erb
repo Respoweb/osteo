@@ -23,9 +23,9 @@ title: Ostéopathe Rezé - Cabinet de Julie Marsault, Bertrand Thery et Pascal B
     </div>
   </div>
 </div>
-<div class="wrapper" style="background-image: url(<%= image_path 'salle-attente-cabinet-osteo.jpg'%>); background-size: cover; min-height: 300px;">
+<div class="wrapper" style="background-image: url(<%= image_path 'salle-attente-cabinet-osteo.jpg'%>); background-size: cover; min-height: 300px; background-position: bottom center;">
   <div class="row">
-    <div class="col-xs-12 col-sm-6 col-sm-offset-3 mindspirit brown-background">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3 mindspirit green-background">
       <div class="spirit-content">
         <h2>L'Ostéopathie c'est quoi ?</h2>
         <p>L'ostéopathie consiste, dans une compréhension globale du patient, à prévenir, diagnostiquer et traiter manuellement les dysfonctions de la mobilité des tissus du corps humain susceptibles d'en altérer l'état de santé.</p>
@@ -34,14 +34,14 @@ title: Ostéopathe Rezé - Cabinet de Julie Marsault, Bertrand Thery et Pascal B
     </div>
   </div>
 </div>
-<div class="container features">
+<div class="wrapper dark-green-background features">
   <div class="row">
     <% data.users.each do |user| %>
       <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="card-container">
           <div class="card">
             <div class="card-content">
-              <%= image_tag user.image, class: 'img-circle card-img'%>
+              <%#= image_tag user.image, class: 'img-circle card-img'%>
               <h2><%= user.fname %> <%= user.lname %></h2>
               <p><%= user.description %></p>
             </div>

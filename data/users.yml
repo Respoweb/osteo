@@ -1,14 +1,14 @@
-- fname: 'Julie'
-  lname: 'Marsault'
-  image: 'profile.jpg'
-  description: "Docteur Ostéopathe Diplomé de l'école IDHEO de Nantes. Formée à Ostéooox : réhabilitation sensori-otrice appliqué à la sphère oro-faciale. Formée à la prise en charge des Nourissons (Formation Eric Simon et Dany Heintz), Femmes enceintes et Sportifs."
-  fees: '58'
-
 - fname: 'Bertrand'
   lname: 'Thery'
   image: 'profile.jpg'
   description: "Docteur Ostéopathe Diplomé de l'école IDHEO de Nantes. Formée à Ostéooox : réhabilitation sensori-otrice appliqué à la sphère oro-faciale. Formée à la prise en charge des Nourissons (Formation Eric Simon et Dany Heintz), Femmes enceintes et Sportifs."
   fees: '63'
+
+- fname: 'Julie'
+  lname: 'Marsault'
+  image: 'profile.jpg'
+  description: "Docteur Ostéopathe Diplomé de l'école IDHEO de Nantes. Formée à Ostéooox : réhabilitation sensori-otrice appliqué à la sphère oro-faciale. Formée à la prise en charge des Nourissons (Formation Eric Simon et Dany Heintz), Femmes enceintes et Sportifs."
+  fees: '58'
 
 - fname: 'Pascal'
   lname: 'Bouvattier'

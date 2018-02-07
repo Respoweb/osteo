@@ -28,8 +28,12 @@
  }
 
 
-.brown-background {
-  background-color: rgba(162, 137, 111, 0.9);
+.green-background {
+  background-color: rgba(0, 191, 165, 0.6);
+}
+
+.dark-green-background {
+  background-color: $green;
 }
 
 .spirit-content {
@@ -68,7 +72,7 @@
 
   .fa {
     font-size: 18px;
-    color: $blue;
+    color: $darkblue;
   }
 }
 
