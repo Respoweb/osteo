@@ -28,8 +28,8 @@ end
 set :url_root, 'http://example.com'
 activate :search_engine_sitemap
 
-caching_policy 'text/html', cache_control: {max_age: 7200, must_revalidate: true}, content_encoding: 'gzip'
-caching_policy 'image/png', cache_control: {max_age: 31536000, public: true}, content_encoding: 'gzip'
-caching_policy 'image/jpeg', cache_control: {max_age: 31536000, public: true}, content_encoding: 'gzip'
-caching_policy 'text/css', cache_control: {max_age: 31536000, public: true}, content_encoding: 'gzip'
-caching_policy 'application/javascript', cache_control: {max_age: 31536000, public: true}, content_encoding: 'gzip'
+# caching_policy 'text/html', cache_control: {max_age: 7200, must_revalidate: true}, content_encoding: 'gzip'
+# caching_policy 'image/png', cache_control: {max_age: 31536000, public: true}, content_encoding: 'gzip'
+# caching_policy 'image/jpeg', cache_control: {max_age: 31536000, public: true}, content_encoding: 'gzip'
+# caching_policy 'text/css', cache_control: {max_age: 31536000, public: true}, content_encoding: 'gzip'
+# caching_policy 'application/javascript', cache_control: {max_age: 31536000, public: true}, content_encoding: 'gzip'
