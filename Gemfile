@@ -8,11 +8,10 @@ gem 'middleman-deploy', git: 'https://github.com/lewagon/middleman-deploy.git'
 gem 'pry-byebug', require: true
 
 # Assets
-gem 'font-awesome-middleman'
+#gem 'font-awesome-middleman'
 gem 'bootstrap-sass'
 gem 'jquery-middleman'
 gem 'middleman-minify-html'
 gem 'therubyracer' # faster JS compiles
 gem 'oj' # faster JSON parser and object serializer
-gem 'middleman-s3_sync'
 
