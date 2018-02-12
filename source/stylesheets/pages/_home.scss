@@ -21,10 +21,10 @@
 
  .mindspirit {
   text-align: center;
-  padding: 25px 20px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
  }
 
 
@@ -37,11 +37,10 @@
 }
 
 .spirit-content {
-  color: white;
+  color: $white;
   p {
     padding: 20px;
     text-align: justify;
-
   }
 }
 

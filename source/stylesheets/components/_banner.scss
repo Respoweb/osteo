@@ -28,6 +28,12 @@
   padding-bottom: 30px;
 }
 
+.banner-spirit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 @media(max-width:767px){
 
@@ -49,7 +55,5 @@
 .banner-opening {
   padding-bottom: 30px;
 }
-
-
 
 }
