@@ -1,17 +1,17 @@
 - fname: 'Bertrand'
   lname: 'Thery'
   image: 'profile.jpg'
-  description: "Ostéopathe D.O diplomé de l'école IDHEO de Nantes. Formée à Ostévoox : réhabilitation sensori-motrice appliqué à la sphère oro-faciale. Formée à la prise en charge des Nourissons."
+  description: "Ostéopathe D.O. dipômé en 2001 de l'école CETOHM de Paris. Titulaire d'un diplôme universitaire d'Hypnose en 2016 de la Faculté de médecine de Lille. Formé à la prise en charge des nourrissons, femmes enceintes et sportifs."
   fees: '63'
 
 - fname: 'Julie'
   lname: 'Marsault'
   image: 'profile.jpg'
-  description: "Ostéopathe D.O diplomé de l'école IDHEO de Nantes. Formée à Ostévoox : réhabilitation sensori-motrice appliqué à la sphère oro-faciale. Formée à la prise en charge des Nourissons."
+  description: "Ostéopathe D.O. diplômée en 2010 de l'IDHEO de Nantes. Formée à Ostéovox: réhabilitation sensori-motrice appliquée à la sphère oro-faciale. Formée à la prise en charge des nourrissons, femmes enceintes et sportifs."
   fees: '58'
 
 - fname: 'Pascal'
   lname: 'Bouvattier'
   image: 'profile.jpg'
-  description: "Ostéopathe D.O diplomé de l'école IDHEO de Nantes. Titulaire d'un diplome universitaire en anatomie clinique. Formée à la prise en charge des Nourissons."
+  description: "Ostéopathe D.O.diplômé en 2009 de l'IDHEO de Nantes. Titulaire d'un dipôme universitaire d'Anatomie Clinique en 2014 de la Faculté de médecine de Paris Descartes. Formé à la prise en charge des nourrissons, femmes enceintes et sportifs."
   fees: '58'
