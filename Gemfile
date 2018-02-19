@@ -14,4 +14,5 @@ gem 'jquery-middleman'
 gem 'middleman-minify-html'
 gem 'therubyracer' # faster JS compiles
 gem 'oj' # faster JSON parser and object serializer
+gem 'middleman-google-analytics', '~> 3.0'
 

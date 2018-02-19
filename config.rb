@@ -24,8 +24,17 @@ activate :deploy do |deploy|
   deploy.deploy_method = :git
 end
 
+# Google Analytics
+###
+activate :google_analytics do |ga|
+    ga.tracking_id = data.application.GA_track_code
+    ga.anonymize_ip = true
+    ga.debug = false
+    ga.minify = true
+end
 
-set :url_root, 'http://example.com'
+
+set :url_root, 'https://osteo-reze.fr'
 activate :search_engine_sitemap
 
 # caching_policy 'text/html', cache_control: {max_age: 7200, must_revalidate: true}, content_encoding: 'gzip'
