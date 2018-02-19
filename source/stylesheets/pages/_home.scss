@@ -69,6 +69,15 @@
     font-weight: lighter;
   }
 
+  a {
+    color: $darkblue;
+
+  }
+  a:hover {
+    color: $lightblue;
+
+  }
+
   .fa {
     font-size: 18px;
     color: $darkblue;

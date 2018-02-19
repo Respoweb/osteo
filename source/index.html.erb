@@ -13,10 +13,10 @@ title: Ostéopathe Rezé - Cabinet de Julie Marsault, Bertrand Thery et Pascal B
           <div class="banner-opening">
             <p><strong>Journée continue du lundi au vendredi sur RDV</strong></p>
             <p><strong>8h à 20h</strong></p>
-            <p><strong>Samedi matin de 9h à 12h</strong></p>
+            <p><strong>Samedi matin sur RDV de 9h à 12h</strong></p>
           </div>
           <% data.offices.each do |office| %>
-            <p><%= office.address %>, <%= office.postalcode %>, <%= office.city %></p>
+            <p><%= office.address %> <%= office.postalcode %> <%= office.city %></p>
           <% end %>
         </div>
       </div>
@@ -60,17 +60,19 @@ title: Ostéopathe Rezé - Cabinet de Julie Marsault, Bertrand Thery et Pascal B
       <div class="infos-mobile">
         <h3>Règlement</h3>
         <p><i class="fa fa-money" aria-hidden="true"></i> Règlement par <strong>chèque</strong> ou <strong>espèces</strong>.</p>
+        <p><i class="fa fa-check" aria-hidden="true"></i> Prise en charge sur facture par la plupart des mutuelles.</p>
+
 
         <h3>Adresse</h3>
         <% data.offices.each do |office| %>
-            <p><i class="fa fa-home" aria-hidden="true"></i> <%= office.address %>, <%= office.postalcode %>, <%= office.city %>.</p>
+            <p><i class="fa fa-home" aria-hidden="true"></i> <a href="https://www.google.fr/maps/place/103+Rue+de+la+Commune+de+1871,+44400+Rez%C3%A9/@47.1863931,-1.5546909,17z/data=!3m1!4b1!4m5!3m4!1s0x4805e95dc99e6f61:0x7afbc9868b0332ce!8m2!3d47.1863895!4d-1.5525022?hl=fr"><%= office.address %>, <%= office.postalcode %>, <%= office.city %></a>.</p>
         <% end %>
 
         <h3>Accessibilité</h3>
-        <p><i class="fa fa-wheelchair" aria-hidden="true"></i> Accessibilité aux personnes à mobilité réduite</p>
-        <p><i class="fa fa-bus" aria-hidden="true"></i> Ligne 3 arrêt balinière.</p>
-        <p><i class="fa fa-bus" aria-hidden="true"></i> Ligne 98 arrêt balinière.</p>
-        <p><i class="fa fa-bus" aria-hidden="true"></i> Ligne 97 arrêt 8 mai.</p>
+        <p><i class="fa fa-wheelchair" aria-hidden="true"></i> Accessibilité aux personnes à mobilité réduite.</p>
+        <p><i class="fa fa-train" aria-hidden="true"></i> Tram 3 arrêt balinière.</p>
+        <p><i class="fa fa-bus" aria-hidden="true"></i> Bus 98 arrêt balinière.</p>
+        <p><i class="fa fa-bus" aria-hidden="true"></i> Bus 97 arrêt 8 mai.</p>
         <p><i class="fa fa-car" aria-hidden="true"></i> Parking du 8 mai à 5 minutes.</p>
       </div>
     </div>
@@ -84,17 +86,19 @@ title: Ostéopathe Rezé - Cabinet de Julie Marsault, Bertrand Thery et Pascal B
         <div class="map-infos-container hidden-xs">
           <h3>Règlement</h3>
           <p><i class="fa fa-money" aria-hidden="true"></i> Règlement par <strong>chèque</strong> ou <strong>espèces</strong>.</p>
+          <p><i class="fa fa-check" aria-hidden="true"></i> Prise en charge sur facture par la plupart des mutuelles.</p>
+
 
           <h3>Adresse</h3>
           <% data.offices.each do |office| %>
-              <p><i class="fa fa-home" aria-hidden="true"></i> <%= office.address %>, <%= office.postalcode %>, <%= office.city %>.</p>
+              <p><i class="fa fa-home" aria-hidden="true"></i> <a href="https://www.google.fr/maps/place/103+Rue+de+la+Commune+de+1871,+44400+Rez%C3%A9/@47.1863931,-1.5546909,17z/data=!3m1!4b1!4m5!3m4!1s0x4805e95dc99e6f61:0x7afbc9868b0332ce!8m2!3d47.1863895!4d-1.5525022?hl=fr"><%= office.address %> <%= office.postalcode %> <%= office.city %></a>.</p>
           <% end %>
 
           <h3>Accessibilité</h3>
-          <p><i class="fa fa-wheelchair" aria-hidden="true"></i> Accessibilité aux personnes à mobilité réduite</p>
-          <p><i class="fa fa-bus" aria-hidden="true"></i> Ligne 3 arrêt balinière.</p>
-          <p><i class="fa fa-bus" aria-hidden="true"></i> Ligne 98 arrêt balinière.</p>
-          <p><i class="fa fa-bus" aria-hidden="true"></i> Ligne 97 arrêt 8 mai.</p>
+          <p><i class="fa fa-wheelchair" aria-hidden="true"></i> Accessibilité aux personnes à mobilité réduite.</p>
+          <p><i class="fa fa-train" aria-hidden="true"></i> Tram 3 arrêt balinière.</p>
+          <p><i class="fa fa-bus" aria-hidden="true"></i> Bus 98 arrêt balinière.</p>
+          <p><i class="fa fa-bus" aria-hidden="true"></i> Bus 97 arrêt 8 mai.</p>
           <p><i class="fa fa-car" aria-hidden="true"></i> Parking du 8 mai à 5 minutes.</p>
         </div>
       </div>
