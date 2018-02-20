@@ -17,15 +17,14 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag "application" %>
-
   </head>
   <body>
     <%= partial "layouts/navbar" %>
     <%= yield %>
     <%= partial "layouts/footer" %>
     <%= google_analytics_tag %>
-   <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=<%['GOOGLE_MAP_API_KEY']%>&callback=initMap">
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxoP3wmcYpZ-5L7oPq2PlJK39vVDOWBdQ&callback=initMap">
     </script>
   </body>
 </html>
