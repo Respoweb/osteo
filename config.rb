@@ -34,7 +34,7 @@ activate :google_analytics do |ga|
 end
 
 
-set :url_root, 'https://www.osteo-reze.fr'
+set :url_root, 'https://www.osteo-reze.com'
 activate :search_engine_sitemap
 
 # caching_policy 'text/html', cache_control: {max_age: 7200, must_revalidate: true}, content_encoding: 'gzip'
