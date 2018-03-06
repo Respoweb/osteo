@@ -9,16 +9,29 @@
     <meta name="description" content="Cabinet d'ostéopathie à Rezé. Prise en charge des Nourrissons, Femme Enceinte et des Sportifs. Sur rendez-vous uniquement du lundi au vendredi de 8h à 20h et le samedi de 9h à 12h.">
     <!-- FACEBOOK -->
     <meta property="og:image" content="<%= image_path 'ogp.jpg'%>" />
-    <meta property="og:image:secure_url" content="https://secure.osteo-reze.fr/ogp.jpg" />
+    <meta property="og:image:secure_url" content="https://wwww.osteo-reze.com/ogp.jpg" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="400" />
     <meta property="og:image:height" content="300" />
     <meta property="og:image:alt" content="Ostéopathes Rezé - Cabinet de Julie Marsault, Bertrand Thery et Pascal Bouvattier" />
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NVB4N9H');</script>
+    <!-- End Google Tag Manager -->
+
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag "application" %>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVB4N9H"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <%= partial "layouts/navbar" %>
     <%= yield %>
     <%= partial "layouts/footer" %>

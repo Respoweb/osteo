@@ -24,14 +24,14 @@ activate :deploy do |deploy|
   deploy.deploy_method = :git
 end
 
-# Google Analytics
-###
-activate :google_analytics do |ga|
-    ga.tracking_id = data.application.GA_track_code
-    ga.anonymize_ip = true
-    ga.debug = false
-    ga.minify = true
-end
+# # Google Analytics
+# ###
+# activate :google_analytics do |ga|
+#     ga.tracking_id = data.application.GA_track_code
+#     ga.anonymize_ip = true
+#     ga.debug = false
+#     ga.minify = true
+# end
 
 
 set :url_root, 'https://www.osteo-reze.com'
