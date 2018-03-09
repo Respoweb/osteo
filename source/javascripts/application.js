@@ -3,7 +3,7 @@
 //= require_tree .
 
 function initMap() {
-        var cabinet = {lat: 47.1755436, lng: -1.567477800000006};
+        var cabinet = {lat: 47.1863895, lng: -1.5525021999999353};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 14  ,
           center: cabinet,
